@@ -4,6 +4,10 @@ import { Box, Button, FormControl, Link, Paper, TextField, Typography, createThe
 import HeroDialog from './HeroDialog'
 import CourseDialog from './CourseDialog'
 import TutingSection from './TutingSection'
+import Guide from './Guide'
+import Service from './Service'
+import About from './About'
+import Footer from './Footer'
 
 export default function HeroSection() {
     const [open,setopen] = useState(false)
@@ -76,6 +80,10 @@ export default function HeroSection() {
         </Box>
     </div>
     <TutingSection/>
+    <Guide/>
+    <Service/>
+    <About/>
+    <Footer/>
 
     </>
   )

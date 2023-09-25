@@ -79,4 +79,37 @@ background-color: #fcfafa;
     
 }
 
+
+@media screen and (max-width:500px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:950px) {
+    .notInverted{
+        display: flex !important;
+        flex-direction: column !important;
+        
+    }
+    .Inverted{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        
+    }
+    .imageToCenter{
+        display: flex !important;
+        
+        justify-content: center !important;
+        margin: 15px 0 !important;
+        
+    }
+    .imageToCenter img{
+        width: 100%;
+       
+        border-radius: 30px;
+        
+    }
+}
+
 /* Responsive Header */
