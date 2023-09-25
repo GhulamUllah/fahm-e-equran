@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.headermain{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5% ;
+    height: 5rem;
+    align-items: center;
+   
+
+}
+.header_logo{
+    display: flex;
+    gap: 2px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header_links ul{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+.mobile_ul{
+    background: #fff !important;
+    width: 30%;
+    padding-left: 0 !important;
+    position: absolute;
+    row-gap: 0 !important;
+    right: 2%;
+    top: 7%;
+    box-shadow: 0 0 3px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    z-index: 1500;
+    
+}
+.mobile_ul li{
+    padding: 7px ;
+    width: 100%;
+    text-align: center;
+    border: 1px solid gray;
+}
+.mobile_ul li:hover{
+background-color: #fcfafa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+
+/* Hero Section */
+.HeroSection{
+    height: calc(100vh - 5rem);
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+   
+}
+.HeroSection img{
+    width: 100%;
+    opacity: .6;
+}
+/* Hero Section */
+
+
+/* Responsive Header */
+
+@media screen and (max-width: 930px) {
+    .MuiTypography-root{
+        font-size: medium !important;
+    }
+    .header_ul{
+        display: none !important;
+
+    }
+    .mobile_head_menu{
+        display: flex !important;
+    }
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Responsive Header */
