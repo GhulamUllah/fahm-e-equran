@@ -3,12 +3,14 @@ import heroimage from '../../herobackground.jpg'
 import { Box, Button, FormControl, Link, Paper, TextField, Typography, createTheme } from '@mui/material'
 import HeroDialog from './HeroDialog'
 import CourseDialog from './CourseDialog'
+import TutingSection from './TutingSection'
 
 export default function HeroSection() {
     const [open,setopen] = useState(false)
     const [course,setcourse] = useState(false)
     const theme = createTheme()
   return (
+    <>
     <div className='HeroSection' style={{position:'relative'}}>
         {
             open && <HeroDialog open={open} setopen={setopen}/>
@@ -70,8 +72,11 @@ export default function HeroSection() {
                 
 
             </Paper>
+
         </Box>
-       
     </div>
+    <TutingSection/>
+
+    </>
   )
 }

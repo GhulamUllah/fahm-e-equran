@@ -8,7 +8,10 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Header/>
-      <HeroSection/>
+      <Routes>
+      
+        <Route path='/' element={<HeroSection/>}/>
+      </Routes>
 
       
     </div>
