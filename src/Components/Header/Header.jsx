@@ -25,8 +25,8 @@ export default function Header() {
                 <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/')}>Home</Box>
                 <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/About')}>About</Box>
                 <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/Services')}>Services</Box>
-                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/')}>Contact</Box>
-                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/')}>FAQs</Box>
+                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/Contact-us')}>Contact</Box>
+                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/FAQs')}>FAQs</Box>
             </Box>
             <MenuIcon className='mobile_head_menu' sx={{display:'none',fontSize:'40px',color:theme.palette.secondary.main,cursor:'pointer',position:'relative'}} onClick={()=>setisBarClicked(!isBarClicked)}/>
              
