@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import {Box, Divider, Typography, createTheme} from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../../quranpng.png'
+import { useNavigate } from 'react-router-dom';
 export default function Header() {
   const theme = createTheme()
+  const navigate = useNavigate()
   const [isBarClicked,setisBarClicked] = useState(false)
   return (
     <Box className='headermain' sx={{boxShadow:theme.shadows[2] }}>
@@ -20,11 +22,11 @@ export default function Header() {
         </Box>
         <Box className='header_links'>
             <Box component={'ul'} className={isBarClicked ? 'mobile_ul' : 'header_ul'}>
-                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}}>Home</Box>
-                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}}>About</Box>
-                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}}>Services</Box>
-                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}}>Contact</Box>
-                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}}>FAQs</Box>
+                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/')}>Home</Box>
+                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/About')}>About</Box>
+                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/Services')}>Services</Box>
+                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/')}>Contact</Box>
+                <Box component={'li'} sx={{color:theme.palette.secondary.light,fontSize:'1.15rem',fontWeight:600,cursor:'pointer','&:hover':{color:theme.palette.secondary.main}}} onClick={()=>navigate('/')}>FAQs</Box>
             </Box>
             <MenuIcon className='mobile_head_menu' sx={{display:'none',fontSize:'40px',color:theme.palette.secondary.main,cursor:'pointer',position:'relative'}} onClick={()=>setisBarClicked(!isBarClicked)}/>
              

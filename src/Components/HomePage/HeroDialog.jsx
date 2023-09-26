@@ -9,7 +9,7 @@ export default function HeroDialog({open,setopen}) {
         <Paper elevation={3} sx={{display:'flex', flexDirection:'column',alignItems:'center',p:4,rowGap:2}}>
                 <Typography variant='h5' sx={{color:theme.palette.primary.dark}}>Select Your Prefered Course</Typography>
                 <Box sx={{width:'80%'}}>
-                <Button variant='contained' sx={{display:'block',width:'100%',mb:2}}>Quran Recite</Button>
+                <Button variant='contained' sx={{display:'block',width:'100%',mb:2}}>Quran Recitation</Button>
                 <Button variant='contained' sx={{display:'block',width:'100%',mb:2}}>Quran Tajweed</Button>
                 <Button variant='contained' sx={{display:'block',width:'100%',mb:2}}>Quran Translation</Button>
                 <Button variant='contained' sx={{display:'block',width:'100%',mb:2}}>Hifz e Quran</Button>

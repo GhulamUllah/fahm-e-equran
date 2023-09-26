@@ -69,7 +69,7 @@ export default function Footer() {
         </Box>
 
        </Box>
-       <Typography variant='h6' sx={{color:'rgba(255,255,255,.5)',textAlign:'center'}}>Copyright ©2023 All rights reserved | This Web is made with <Link href='https://fahm-e-equranvercel.app'>Fahm-e-quran</Link></Typography>
+       <Typography variant='h6' sx={{color:'rgba(255,255,255,.5)',textAlign:'center'}}>Copyright ©2023 All rights reserved | This Web is made with <Link href='https://fahm-e-equran.vercel.app'>Fahm-e-quran</Link></Typography>
     </Paper>
   )
 }
