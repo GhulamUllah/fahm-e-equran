@@ -1,6 +1,7 @@
 import { Box, Paper, Typography, createTheme } from '@mui/material'
 import React from 'react'
 import quran from '../../quranpng.png'
+import Footer from './Footer'
 
 export default function Service() {
     const theme = createTheme()
@@ -44,6 +45,7 @@ export default function Service() {
 
 
             </Paper>
+            <Footer/>
         </Box>
     )
 }

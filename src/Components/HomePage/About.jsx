@@ -4,6 +4,7 @@ import about1 from '../../about_1.webp'
 import about2 from '../../about_2.webp'
 import about3 from '../../about_3.webp'
 import about4 from '../../about_4.webp'
+import Footer from './Footer'
 
 export default function About() {
     return (
@@ -134,6 +135,7 @@ FAHAD Tutors is the perfect solution for professional Quran learning, memorizati
                     </Box>
                 </Box>
             </Paper>
+            <Footer/>
         </Box>
     )
 }

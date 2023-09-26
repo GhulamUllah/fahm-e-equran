@@ -4,6 +4,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { TreeView } from '@mui/x-tree-view/TreeView';
 import { TreeItem } from '@mui/x-tree-view/TreeItem';
 import { Box, Paper, Typography } from '@mui/material';
+import Footer from './Footer';
 
 export default function FAQs() {
     return (
@@ -158,6 +159,7 @@ export default function FAQs() {
 
                 </TreeView>
             </Paper>
+            <Footer/>
         </Box>
     );
 }
