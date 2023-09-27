@@ -61,14 +61,28 @@ background-color: #fcfafa;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: .9;
 }
 /* Hero Section */
 
 
 /* Responsive Header */
+.image2{
+    display: none !important;
+}
+@media screen and (max-width: 600px) {
+    .image2{
+        display: flex !important;
+    }
+    .image1{
+        display: none !important;
+    }
+    .herotop{
+        background-color: rgba(255, 255, 255, .5) !important;
+    }
+}
 
 @media screen and (max-width: 436px) {
+  
 .heroSectionButton{
     display: flex !important;
     flex-direction: column !important;

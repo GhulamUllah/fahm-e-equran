@@ -45,7 +45,6 @@ export default function Service() {
 
 
             </Paper>
-            <Footer/>
         </Box>
     )
 }

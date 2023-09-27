@@ -135,7 +135,6 @@ FAHAD Tutors is the perfect solution for professional Quran learning, memorizati
                     </Box>
                 </Box>
             </Paper>
-            <Footer/>
         </Box>
     )
 }
