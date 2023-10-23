@@ -21,15 +21,15 @@ export default function CustomerCare({isCustomerHelp,setisCustomerHelp}) {
         <TextField
          fullWidth
          required
-         placeholder='Your Registered Email'
+         placeholder='Your Email *'
          onChange={(e)=>setemail(e.target.value)}
 
          />
          <Autocomplete
          options={['Course Related','Services Related','Fee Related','Suggestion']}
-         renderInput={(p)=><TextField required {...p}/>}
+         renderInput={(p)=><TextField required {...p} label='Complaint Type'/>}
          onChange={(e)=>setcomplainttype(e.target.value)}
-         title='Select Type'
+         
          />
          <CommentBox italic={italic} setItalic={setItalic} fontWeight={fontWeight}  setFontWeight={setFontWeight} anchorEl={anchorEl}  setAnchorEl={setAnchorEl} />
         </DialogContent>

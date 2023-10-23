@@ -3,12 +3,18 @@ import tajweed from '../../tajweed.png'
 import nazra from '../../Nazra.jpg'
 import hifz from '../../hifz.jpg'
 import translation from '../../translation.png'
-import React from 'react'
+import React, { useState } from 'react'
+import Signup from './Signup'
 
 export default function TutingSection() {
     const theme = createTheme()
+    const [course,setcourse] = useState()
+    const [isSignup,setisSignup] = useState(false)
   return (
     <Box sx={{p:2}}>
+        {
+            isSignup && <Signup isSignup={isSignup} setisSignup={setisSignup} course={course}/>
+        }
         <Paper elevation={2} sx={{p:2}}>
         <Box sx={{display:'flex',justifyContent:'center'}}>
             <Typography variant='h5' sx={{color:'secondary.main',cursor:'default',textAlign:'center', transition:'.6s all ease-in-out',borderBottom:'2px solid','&:hover':{pb:1}}}>Select Your Favourite</Typography>
@@ -16,9 +22,6 @@ export default function TutingSection() {
 
 
         <Box sx={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,250px))',gap:2,boxSizing:'border-box',justifyContent:'space-around',my:3}}>
-       
-
-
 
      <Paper elevation={1} sx={{p:2,display:'flex',flexDirection:'column',rowGap:1,alignItems:'center','&:hover':{boxShadow:theme.shadows[5]}}}>
             <Box sx={{height:'150px',width:'150px',borderRadius:'50%',overflow:'hidden',border:'2px solid',color:'primary.main'}}>
@@ -30,7 +33,7 @@ export default function TutingSection() {
             <Box>
             <Typography sx={{color:'primary.light',cursor:'default'}}><b>Description: </b> 1 Week Free Trial, This is Your Perfect Place to Learn Tajweed</Typography>
             </Box>
-            <Button variant='contained'>Start Trial</Button>
+            <Button variant='contained' onClick={()=>{setcourse("Tajweed");  setisSignup(true)}}>Start Trial</Button>
         </Paper>
        
        
@@ -47,7 +50,7 @@ export default function TutingSection() {
             <Box>
             <Typography sx={{color:'primary.light',cursor:'default'}}><b>Description: </b> One Week Free Trial, This is Your Perfect Place to Learn Recitation</Typography>
             </Box>
-            <Button variant='contained'>Start Trial</Button>
+            <Button variant='contained' onClick={()=>{setcourse("Quran Recite");  setisSignup(true)}}>Start Trial</Button>
         </Paper>
        
        
@@ -64,7 +67,7 @@ export default function TutingSection() {
             <Box>
             <Typography sx={{color:'primary.light',cursor:'default'}}><b>Description: </b> 1 Week Free Trial, This is Your Perfect Place for Quran Translation</Typography>
             </Box>
-            <Button variant='contained'>Start Trial</Button>
+            <Button variant='contained' onClick={()=>{setcourse("Quran Translation");  setisSignup(true)}}>Start Trial</Button>
         </Paper>
        
        
@@ -81,7 +84,7 @@ export default function TutingSection() {
             <Box>
             <Typography sx={{color:'primary.light',cursor:'default'}}><b>Description: </b> 1 Week Free Trial, This is Your Perfect Place for Hifz ul Quran</Typography>
             </Box>
-            <Button variant='contained'>Start Trial</Button>
+            <Button variant='contained' onClick={()=>{setcourse("Hifz e Quran");  setisSignup(true)}}>Start Trial</Button>
         </Paper>
        
 

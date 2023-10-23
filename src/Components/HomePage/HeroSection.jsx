@@ -11,7 +11,7 @@ import Signup from './Signup'
 
 export default function HeroSection() {
     const [open,setopen] = useState(false)
-    const [course,setcourse] = useState(false)
+    const [course,setcourse] = useState()
     const [isSignup,setisSignup] = useState(false)
     const theme = createTheme()
   return (
